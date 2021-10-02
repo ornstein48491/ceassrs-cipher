@@ -1,0 +1,41 @@
+/*
+READ COMMENTS IN JAVASCRIPT TO UNDERSTAND HOW IT WORKS
+READ COMMENTS IN JAVASCRIPT TO UNDERSTAND HOW IT WORKS
+READ COMMENTS IN JAVASCRIPT TO UNDERSTAND HOW IT WORKS
+*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: calc(100vw - 25px);
+  height: 100vh;
+  display: block;
+  text-align: center;
+  
+  background: #f55;
+  color: white;
+  
+  font-family: "Open Sans"
+}
+
+input {
+  padding: 10px;
+  border: 0px;
+  outline: 0;
+  border-bottom: 2px solid rgba(255,255,255,0.6);
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  transition: border-bottom 300ms ease-in-out;
+}
+p {
+  font-size: 16px;
+  color: #f9f9f9;
+}
+#output {
+  font-size: 30px;
+}

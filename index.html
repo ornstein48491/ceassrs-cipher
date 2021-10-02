@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Шифр Цезаря</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Ceasars Cipher Encryptor</h1>
+    <p>Type your message here:</p>
+    <input type="text" id="message" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+    <p>Type your shift here:</p>
+    <input type="text" id="shift" value="20">
+    <p>Choose langueg:</p>
+    <div>
+        <input type="radio" id="text" name="drone" value="eng">
+        <label for="eng">English</label>
+    </div>
+
+    <div>
+        <input type="radio" id="text" name="drone" value="ukr" checked>
+        <label for="ukr">Українська</label>
+    </div>
+    <p>Encoded message here:</p>
+    <div id="output"></div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
