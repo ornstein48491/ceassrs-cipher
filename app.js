@@ -1,7 +1,7 @@
 let buttonOn = document.getElementById('button');
 (buttonOn.onclick = function () {
     "use strict";
-    let text = prompt('Выберите на каком языке производить шифроавние. \nВарианты ответа: ukr, eng. \n\n*Если ответ будет напечатан неверно то в таком случае английский язык будет выбран как язык по-умолчанию.', '');
+    let text = prompt('Choose in which language to produce encryption. \nAnswer options: ukr, eng. \n\n* If the answer is typed incorrectly then English will be selected as the default language.', '');
     switch (text) {
         case "ukr":
             window.CeasarsCipher = function (input) {

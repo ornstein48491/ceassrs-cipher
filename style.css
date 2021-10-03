@@ -82,6 +82,7 @@ h3 {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   color: #2148C0;
+  padding: 5px 10px;
 }
 
 .button {
@@ -97,12 +98,11 @@ h3 {
   color: #2148C0;
 }
 
-
 .arrow-7 {
   width: 100px;
   height: 38px;
   display: flex;
-  padding: 150px 0px 0px 0px;
+  padding: 200px 0px 0px 0px;
 }
 
 .arrow-7 span {
