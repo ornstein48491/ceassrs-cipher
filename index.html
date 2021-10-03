@@ -8,23 +8,33 @@
 </head>
 
 <body>
-    <h1>Ceasars Cipher Encryptor</h1>
-    <p>Type your message here:</p>
-    <input type="text" id="message" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
-    <p>Type your shift here:</p>
-    <input type="text" id="shift" value="20">
-    <!-- <p>Choose langueg:</p>
-    <div>
-        <input type="radio" id="text" name="drone" value="eng" onclick="cezar(this.value);" checked>
-        <label for="eng">English</label>
+    <div class="head-container">
+        <h1>Ceasars Cipher Encryptor</h1>
+        <h3></h3>
+        <h1>Samoilov Dmytro TR-91</h1>
     </div>
-
-    <div>
-        <input type="radio" id="text" name="drone" value="ukr" onclick="cezar(this.value);">
-        <label for="ukr">Українська</label> -->
+    <div class="message-container">
+        <div class="message-container-1">
+            <p>Type your message here:</p>
+            <textarea type="text" class="message" id="message" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ" cols='48' rows="10"
+                placeholder="Start typing..."></textarea>
+        </div>
+        <div class="arrow-7">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="message-container-1">
+            <p>Encrypted text:</p>
+            <textarea class="message" id="output" cols='48' rows="10"></textarea>
+        </div>
     </div>
-    <p>Encoded message here:</p>
-    <div id="output"></div>
+    <div class="parameters-container">
+        <p>Type your shift step here:</p>
+        <input type="text" id="shift" value="20">
+        <p>Choose language:</p>
+        <button type="button" class="button" id="button" value="chlang">Change</button>
+    </div>
     <script src="./app.js"></script>
 </body>
 

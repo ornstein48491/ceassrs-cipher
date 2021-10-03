@@ -1,41 +1,140 @@
-/*
-READ COMMENTS IN JAVASCRIPT TO UNDERSTAND HOW IT WORKS
-READ COMMENTS IN JAVASCRIPT TO UNDERSTAND HOW IT WORKS
-READ COMMENTS IN JAVASCRIPT TO UNDERSTAND HOW IT WORKS
-*/
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   width: calc(100vw - 25px);
   height: 100vh;
-  display: block;
   text-align: center;
-  
-  background: #f55;
+
+  background: #264ECA;
   color: white;
-  
-  font-family: "Open Sans"
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+  font-size: 20px;
+  width: 400px;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.message-container-1 {
+  width: 400px;
+}
+
+.parameters-container {
+  margin-top: 50px;
 }
 
 input {
   padding: 10px;
   border: 0px;
   outline: 0;
-  border-bottom: 2px solid rgba(255,255,255,0.6);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
   background-color: transparent;
   color: white;
   text-align: center;
   font-size: 22px;
   transition: border-bottom 300ms ease-in-out;
 }
+
 p {
-  font-size: 16px;
+  font-size: 25px;
   color: #f9f9f9;
 }
+
+h1 {
+  width: 420px;
+}
+
+h3 {
+  width: 100px;
+}
+
 #output {
-  font-size: 30px;
+  background: #2148C0;
+  color: #fff;
+}
+
+.message {
+  border: none;
+  outline: none;
+  resize: none;
+  left: 490px;
+  top: 483px;
+
+  background: #fff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: #2148C0;
+}
+
+.button {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  left: 490px;
+  top: 483px;
+
+  background: #fff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: #2148C0;
+}
+
+
+.arrow-7 {
+  width: 100px;
+  height: 38px;
+  display: flex;
+  padding: 150px 0px 0px 0px;
+}
+
+.arrow-7 span {
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #337AB7;
+  border-right: 5px solid #337AB7;
+  transform: rotate(-45deg);
+  margin: -16px 0;
+  animation: arrow-7 2s infinite;
+}
+
+.arrow-7 span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow-7 span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes arrow-7 {
+  0% {
+      opacity: 0;
+      transform: translate(-20px, 0) rotate(-45deg);
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+      transform: translate(20px, 0) rotate(-45deg);
+  }
 }

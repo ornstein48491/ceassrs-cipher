@@ -1,6 +1,7 @@
-(function () {
+let buttonOn = document.getElementById('button');
+(buttonOn.onclick = function () {
     "use strict";
-    const text = prompt('Выберите на каком языке производить шифроавние. Варианты выбора: ukr, eng.', '');
+    let text = prompt('Выберите на каком языке производить шифроавние. \nВарианты ответа: ukr, eng. \n\n*Если ответ будет напечатан неверно то в таком случае английский язык будет выбран как язык по-умолчанию.', '');
     switch (text) {
         case "ukr":
             window.CeasarsCipher = function (input) {
@@ -45,7 +46,7 @@
                     shiftedAlphabet = "",
                     OUTPUT = "",
                     STRING,
-                    otherCharacters = '-=~\"\'#$%&*^:<>?/!{(|)}.1234567890\, ';
+                    otherCharacters = '-=~\"\'#$%&*^:<> ?/!{(|)}.1234567890\, ';
                 if (typeof input === "object") {
                     shiftAmount = input.shift;
                     STRING = input.msg.toLowerCase();
