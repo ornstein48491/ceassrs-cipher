@@ -29,6 +29,10 @@ let buttonOn = document.getElementById('button');
                         var numberd = alphabetUkr.indexOf(STRING[i]);
 
                         OUTPUT += shiftedAlphabet[numberd];
+                        if (shiftedAlphabet[numberd] === undefined) {
+                            OUTPUT = " ";
+                            console.log(OUTPUT);
+                        }
                     }
                 } else {
                     //IF STRING is not a STRING or it is not even present, we drop the function
