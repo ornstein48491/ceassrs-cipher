@@ -10,7 +10,7 @@ let buttonOn = document.getElementById('button');
                     shiftedAlphabet = "",
                     OUTPUT = "",
                     STRING,
-                    otherCharacters = '-=~\"\'#$%&*^:<>?/!{(|)}.1234567890\, ';
+                    otherCharacters = '-=~\"\'#$%&*^:<>?/!{(|)}.1234567890\,\n';
                 if (typeof input === "object") {
                     shiftAmount = input.shift;
                     STRING = input.msg.toLowerCase();
@@ -30,8 +30,7 @@ let buttonOn = document.getElementById('button');
 
                         OUTPUT += shiftedAlphabet[numberd];
                         if (shiftedAlphabet[numberd] === undefined) {
-                            OUTPUT = " ";
-                            console.log(OUTPUT);
+                            OUTPUT = '\n';
                         }
                     }
                 } else {
@@ -50,7 +49,7 @@ let buttonOn = document.getElementById('button');
                     shiftedAlphabet = "",
                     OUTPUT = "",
                     STRING,
-                    otherCharacters = '-=~\"\'#$%&*^:<> ?/!{(|)}.1234567890\, ';
+                    otherCharacters = '-=~\"\'#$%&*^:<> ?/!{(|)}.1234567890\,\n';
                 if (typeof input === "object") {
                     shiftAmount = input.shift;
                     STRING = input.msg.toLowerCase();
@@ -69,6 +68,9 @@ let buttonOn = document.getElementById('button');
                         var numberd = alphabetEng.indexOf(STRING[i]);
 
                         OUTPUT += shiftedAlphabet[numberd];
+                        if (shiftedAlphabet[numberd] === undefined) {
+                            OUTPUT = '\n';
+                        }
                     }
                 } else {
                     //IF STRING is not a STRING or it is not even present, we drop the function
