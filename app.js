@@ -10,7 +10,7 @@ let buttonOn = document.getElementById('button');
                     shiftedAlphabet = "",
                     OUTPUT = "",
                     STRING,
-                    otherCharacters = '-=~\"\'#$%&*^:<>?/!{(|)}.1234567890\,\n' ;
+                    otherCharacters = ' -=~\"\'#$%&*^:<>?/!{(|)}.1234567890\,\n';
                 if (typeof input === "object") {
                     shiftAmount = input.shift;
                     STRING = input.msg.toLowerCase();
@@ -49,7 +49,7 @@ let buttonOn = document.getElementById('button');
                     shiftedAlphabet = "",
                     OUTPUT = "",
                     STRING,
-                    otherCharacters = '-=~\"\'#$%&*^:<> ?/!{(|)}.1234567890\,\n' ;
+                    otherCharacters = ' -=~\"\'#$%&*^:<> ?/!{(|)}.1234567890\,\n';
                 if (typeof input === "object") {
                     shiftAmount = input.shift;
                     STRING = input.msg.toLowerCase();
